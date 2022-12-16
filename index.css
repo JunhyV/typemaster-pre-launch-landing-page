@@ -1,0 +1,438 @@
+:root{
+    --white: #FFF;
+    --dark-blue: #162542;
+    --gray-blue: #7B8BAD;
+    --light-gray: #E8EFF2;
+    --orange: #F16718;
+    --light-orange: #FF9B62;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Elements Configuration*/ /*--------------------------------------------------*/
+body{ 
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+}
+
+    /*Images*/
+    img[alt="shared"]{
+        width: 30px;
+        height: 30px;
+        padding: 17.5px;
+        background-color: var(--orange);
+        border-radius: 16px;
+    }
+
+    img[alt="square"]{
+        width: 250px;
+        height: 250px;
+    }
+
+    img[alt="logo"]{
+        width: 40px;
+        height: 40px;
+    }
+
+    /*Buttons*/
+    button{
+        width: 175px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+        button:hover{
+            cursor: pointer;
+
+        }
+
+    #btn-1{
+        background-color: var(--light-gray);
+    }
+        #btn-1:hover{
+        background-color: var(--dark-blue);
+        color: var(--white);
+        }
+
+
+    #btn-2{
+        background-color: var(--orange);
+        color: var(--white);
+    }
+        #btn-2:hover{
+        background-color: var(--light-orange);
+        }
+
+    /*Letters*/
+    h1, h2, h3{
+        color: var(--dark-blue);
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+        h1{
+            font-size: 56px;
+        }
+            @media (max-width: 1139px){
+                h1{
+                font-size: 48px;
+                }
+            }
+
+        h2{
+            font-size: 32px;
+        }
+
+        h2{
+            font-size: 24px;
+        }
+
+    p{
+        color: var(--gray-blue);
+    }
+
+    h4{
+        font-weight: 700;
+        color: var(--gray-blue);
+        text-transform: uppercase;
+    }
+        @media (min-width: 1140px){
+            .plus{
+                font-size: 18px;
+            }
+        }
+
+    /*Images*/
+    .img-1{
+        background-image: url('assets/desktop/image-keyboard.jpg');
+        width: 540px;
+        height: 480px; 
+        background-size: contain;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+        @media (max-width: 1139px){
+            .img-1{
+                background-image: url('assets/tablet/image-keyboard.jpg');
+                width: 478px;
+                height: 425px; 
+            }
+        }
+
+        @media (max-width: 767){
+            .img-1{
+                background-image: url('assets/mobile/image-keyboard.jpg');
+                width: 350px;
+                height: 331px; 
+            }
+        }
+    .img-2{
+        background-image: url('assets/desktop/image-phone-and-keyboard.jpg');
+        width: 255px;
+        height: 480px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .filter{
+        width: 255px;
+        height: 480px;
+        mix-blend-mode: multiply;
+        opacity: 0.75;
+        background-color: var(--orange);
+        border-radius: 20px;
+    }
+        @media (max-width: 1139px){
+            .img-2{
+                background-image: url('assets/tablet/image-phone-and-keyboard.jpg');
+                width: 214px;
+                height: 320px;
+            }
+            .filter{
+                width: 214px;
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 767px){
+            .img-2{
+                background-image: url('assets/mobile/image-phone-and-keyboard.jpg');
+                width: 129px;
+                height: 193px;
+            }
+            .filter{
+                width: 129px;
+                height: 193px;
+            }
+        }
+    .img-3{
+        background-image: url('assets/desktop/image-glass-and-keyboard.jpg');
+        width: 445px;
+        height: 480px;
+        border-radius: 20px; 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+        @media (max-width: 1139px){
+            .img-3{
+                background-image: url('assets/tablet/image-glass-and-keyboard.jpg');
+                width: 445px;
+                height: 320px;
+            }
+        }
+        @media (max-width: 767px){
+            .img-3{
+                background-image: url('assets/mobile/image-glass-and-keyboard.jpg');
+                width: 220px;
+                height: 193px;
+            }
+        }
+
+
+/*Container*/ /*--------------------------------------------------*/
+.container{
+    width: 1100px;
+    margin: 50px 0;
+}
+    @media (max-width: 1139px){
+    .container{
+        width: 670px;    
+        margin: 40px 0;
+        }
+    }
+
+    @media (max-width: 767px){
+    .container{
+        width: 310px;
+        margin: 20px 0;
+        }
+    }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+    @media (max-width: 1139px){
+        header{
+            margin-bottom: 50px;
+        }
+
+    }
+
+/*First Card*/ /*--------------------------------------------------*/
+.first-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+    @media (max-width: 1139px) and (min-width: 767px){
+        .first-content{
+            height: 425px;
+        }
+    }
+
+.first-card{
+    width: 445px;
+    height: 312px;
+}
+    @media (max-width: 1139px){
+        .first-card{
+            width: 339px;
+            height: 312px;
+        }
+    }
+
+    @media (max-width: 767px){
+        .first-content{
+            display: flex;
+            align-items: center;
+            justify-content:baseline;
+            flex-direction: column;
+        }
+
+        .first-card{
+            width: 310px;
+            height: 286px;
+        }
+    }
+
+h1, p[class='plus'] {
+    margin-bottom: 20px;
+}
+
+.release{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    @media (max-width: 1139px) and (min-width: 768px){
+        .img-1{
+            position: absolute;
+            right: -180px;
+        }
+    }
+
+    @media (max-width: 767px){
+        .img-1{
+            position: inherit;
+            left: 85px;
+        }
+    }
+
+/*Second Card*/ /*--------------------------------------------------*/
+.second-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+    @media (max-width: 1139px){
+        .second-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 1139px){
+        .second-content{
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width: 767px){
+        .second-content{
+            margin-bottom: 0;
+        }
+    }
+
+.images-div{
+    display: flex;
+    justify-content: space-between;
+}
+    @media (min-width: 1140px){
+        .images-div{
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 1139px){
+        .images-div{
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 1139px){
+        .img-2{
+            margin-right: 30px;
+        }
+    }
+    @media (max-width: 767px){
+        .img-2{
+            position: relative;
+            margin-right: -50px;
+            left: -70px;
+        }
+    }
+
+.text-div{
+    width: 255px;
+    height: 265px;
+}
+    @media (max-width: 1139px) and (min-width: 768px){
+        .text-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 689px;
+            height: 108px;
+        }
+    }
+    @media (max-width: 767px){
+        .text-div{
+            text-align: center;
+        }
+    }
+
+
+/*Third Card*/ /*--------------------------------------------------*/
+.third-content{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}  
+    @media (max-width: 1139px){
+        .third-content{
+            display: grid;
+            grid: repeat(2, 1fr) / repeat(2, 1fr);
+        }  
+    }
+    @media (max-width: 767px){
+        .third-content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 0;
+        }  
+    }
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 255px;
+    height: 323px;
+}
+    @media (max-width: 767px){
+        .card{
+            width: 255px;
+            height: 255px;
+            margin-bottom: 50px;
+        }
+
+    }
+
+footer{
+    text-align: center;
+    color: var(--gray-blue);
+}
+
+.right-top{
+    position: absolute;
+    top: 187px;
+    right: -125px;
+    z-index: -1;
+}
+
+.left-bottom{
+    position: absolute;
+    top: 955px;
+    left: -125px;
+    z-index: -1;
+}
+
+@media (max-width: 1139px){
+    img[alt='square']{
+        display: none;
+    }
+}
